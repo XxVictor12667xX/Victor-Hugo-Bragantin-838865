@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.pedido-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.pedido-itens {
+    list-style: none;
+    padding: 0;
+}
+
+.pedido-itens li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.pedido-itens h3 {
+    margin: 0 0 5px;
+}
+
+.pedido-itens p {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: inline;
+}

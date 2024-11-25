@@ -1,0 +1,153 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal do formulário */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    border-top: 5px solid #007BFF;
+}
+
+/* Cabeçalho do formulário */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Estilo dos campos de entrada */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo dos campos de entrada quando em foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+    background-color: #e7f1ff;
+    outline: none;
+}
+
+/* Botão de envio */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para os campos obrigatórios (borda vermelha) */
+input[required] {
+    border-color: #ff6347;
+}
+
+/* Estilo para a seção de endereço */
+h3 {
+    margin-top: 30px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Estilo para o botão "Cadastrar" */
+button[type="submit"] {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 14px 20px;
+    background-color: #28a745;
+    border-radius: 8px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Mensagens de erro */
+.alert {
+    color: #ff6347;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Aplique o efeito de transição nos campos */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="password"] {
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Estilos adicionais de responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
